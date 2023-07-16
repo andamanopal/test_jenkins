@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     image: test_dash_image
-    network_mode: host
+    # network_mode: host
     ports:
       - "8801:8801"
     container_name: test_dash_container
