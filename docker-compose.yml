@@ -8,6 +8,6 @@ services:
     network_mode: host
     ports:
       - "8801:8801"
-    container_name: alto_dash_chiller_plant
+    container_name: test_dash_container
     volumes:
       - ".:/dashboard"
