@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  test_dash_container:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: test_dash_image
+    network_mode: host
+    ports:
+      - "8801:8801"
+    container_name: alto_dash_chiller_plant
+    volumes:
+      - ".:/dashboard"
